@@ -1,0 +1,9 @@
+ErrorDocument 404 /php/error.php
+
+RewriteEngine On
+
+RewriteCond %{REQUUEST_FILENAME} !-f 
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
